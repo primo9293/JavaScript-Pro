@@ -1,19 +1,22 @@
 {
-  "name": "javascript-pro",
-  "version": "1.0.0",
-  "description": "JavaScript Pro Platzi",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/primo9293/JavaScript-Pro.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/primo9293/JavaScript-Pro/issues"
-  },
-  "homepage": "https://github.com/primo9293/JavaScript-Pro#readme"
+    "name": "javascript-pro",
+    "version": "1.0.0",
+    "description": "JavaScript Pro Platzi",
+    "main": "index.js",
+    "scripts": {
+        "start": "live-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/primo9293/JavaScript-Pro.git"
+    },
+    "author": "Carlos Macias",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/primo9293/JavaScript-Pro/issues"
+    },
+    "homepage": "https://github.com/primo9293/JavaScript-Pro#readme",
+    "devDependencies": {
+        "live-server": "^1.2.1"
+    }
 }
