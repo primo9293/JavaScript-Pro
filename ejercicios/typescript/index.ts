@@ -22,14 +22,14 @@ peopleAndNumbers.push('Ricardo');
 peopleAndNumbers.push(9001);
 
 // Enum
-enum Color {
-  Rojo = 'Rojo',
-  Verde = 'Verde',
-  Azul = 'Azul',
-  Amarillo = 'Amarillo',
+enum Color1 {
+  Rojo1 = 'Rojo',
+  Verde1 = 'Verde',
+  Azul1 = 'Azul',
+  Amarillo1 = 'Amarillo',
 }
 
-let colorFavorito: Color = Color.Amarillo;
+let colorFavorito: Color1 = Color1.Amarillo1;
 console.log(`Mi color favorito es ${colorFavorito}`);
 
 // Any
@@ -61,3 +61,34 @@ function fullName(firstName: string, lastName: string = 'Smith'): string {
 
 const richard = fullName('Agente');
 console.log(richard);
+
+// Interfaces
+enum Color {
+  Rojo = 'Rojo',
+  Verde = 'Verde',
+}
+
+interface Rectangulo {
+  ancho: number;
+  alto: number;
+  color?: Color;
+}
+
+let rect: Rectangulo = {
+  ancho: 4,
+  alto: 6,
+  // color: Color.Rojo,
+};
+
+function area(r: Rectangulo): number {
+  return r.alto * r.ancho;
+}
+
+const areaRect = area(rect);
+console.log(areaRect);
+
+rect.toString = function() {
+  return this.color ? `Un rectangulo ${this.color}` : `Un rectangulo`;
+};
+
+console.log(rect.toString());
